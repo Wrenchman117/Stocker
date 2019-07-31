@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height_dimension">80dp</dimen>
+    <dimen name="detail_photo_dimension">170dp</dimen>
+    <dimen name="margin_on_top">16dp</dimen>
+</resources>

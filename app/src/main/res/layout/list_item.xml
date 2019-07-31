@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="80dp"
+        android:layout_height="100dp"/>
+
+    <RelativeLayout
+        android:id="@+id/info_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/item_image"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/app_txt_config"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/product_name_text"/>
+        <TextView
+            style="@style/app_txt_config"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/product_name_text"
+            android:layout_alignParentLeft="true"
+            android:text="@string/money_sign"
+            android:id="@+id/currency_sign"/>
+        <TextView
+            style="@style/app_txt_config"
+            android:layout_below="@id/product_name_text"
+            android:layout_toRightOf="@id/currency_sign"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/price_text"/>
+        <Button
+            android:id="@+id/sales_btn"
+            style="@style/app_txt_config"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:focusable="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/buy_text"/>
+        <TextView
+            style="@style/app_txt_config"
+            android:id="@+id/in_stock_text"
+            android:layout_below="@id/sales_btn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/in_stock_txt"/>
+        <TextView
+            style="@style/app_txt_config"
+            android:id="@+id/stock_num_text"
+            android:layout_below="@id/sales_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/in_stock_text"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

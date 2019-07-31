@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_supplier_options">
+        <item>@string/supplier_unknown</item>
+        <item>@string/supplier_maki</item>
+        <item>@string/supplier_hendrix</item>
+        <item>@string/supplier_abacus</item>
+        <item>@string/supplier_futura</item>
+    </string-array>
+</resources>

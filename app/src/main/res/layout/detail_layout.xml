@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="@dimen/detail_photo_dimension"
+            android:layout_height="@dimen/detail_photo_dimension"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            style="@style/elevation_n_shadows"
+            android:id="@+id/detail_photo_image"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_photo_image"
+            android:src="@mipmap/add_photo_icon"
+            android:layout_toEndOf="@id/detail_photo_image"
+            android:layout_alignTop="@id/detail_photo_image"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_on_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/detail_photo_image">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_on_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="General"
+                    style="@style/CategoryStyle"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="4dp"
+
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_product_name"
+                        android:hint="@string/product_name"
+                        style="@style/EditorFieldStyle"/>
+                    <EditText
+                        android:id="@+id/edit_price"
+                        android:hint="@string/price"
+                        style="@style/EditorFieldStyle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/margin_on_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_quantity"
+                    android:hint="@string/quantity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    style="@style/EditorFieldStyle"/>
+
+                <Button
+                    android:id="@+id/subtract_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="34dp"
+                    android:layout_toStartOf="@id/edit_quantity"
+                    android:background="@mipmap/remove_icon"
+                    style="@style/elevation_n_shadows"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:id="@+id/add_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="34dp"
+                    android:layout_toEndOf="@id/edit_quantity"
+                    android:background="@mipmap/add_icon"
+                    android:textAlignment="center"
+                    style="@style/elevation_n_shadows"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_on_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="From:"
+                    style="@style/CategoryStyle"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="4dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:id="@+id/spinner_supplier"
+                        android:paddingRight="16dp"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_on_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Description: "
+                    style="@style/CategoryStyle"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="4dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_description"
+                        android:hint="@string/description"
+                        android:layout_height="120dp"
+                        style="@style/EditorFieldStyle"
+                        android:inputType="textMultiLine"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Stocker</string>
+    <string name="empty_view_title_text">No items in storage!!!!</string>
+    <string name="money_sign">$</string>
+    <string name="in_stock_txt"> in stock</string>
+    <string name="buy_text">Buy Item</string>
+    <string name="price">Price ($)</string>
+    <string name="product_name">Product name</string>
+    <string name="quantity">Quantity</string>
+    <string name="description">Description</string>
+    <string name="editor_activity_title_new_item">New Item</string>
+    <string name="editor_activity_title_edit_pet">Edit Item</string>
+
+    <string name="supplier_unknown">Unknown</string>
+    <string name="supplier_maki">Maki</string>
+    <string name="supplier_hendrix">Hendrix</string>
+    <string name="supplier_abacus">Abacus</string>
+    <string name="supplier_futura">Futura</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete this Item?</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_insert_item_failed">Error saving item</string>
+    <string name="editor_insert_item_succsful">Item saved</string>
+    <string name="editor_update_item_failed">Error updating item</string>
+    <string name="editor_update_item_succesful">Item updated</string>
+    <string name="editor_delete_item_failed">Error with deleting item</string>
+    <string name="editor_delete_item_succesful">Item deleted</string>
+</resources>
